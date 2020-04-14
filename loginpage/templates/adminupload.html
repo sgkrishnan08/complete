@@ -1,0 +1,30 @@
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+
+      <title>login</title>
+      <style>
+        body
+          {
+            background-color:lightgrey;
+          }
+      </style>
+    </head>
+    <body>
+    <div style="background-color:white ; padding:40px ; display:block ; border-radius:20px; text-align: left; font-size:15px; float:center	;align-content: center;position:absolute;position:absolute;left: 40%;top:20%
+  ">
+  <div>
+
+    <h3>upload a file here:</h3>
+    <form action="fileupload" method= "POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="file" name="excel"><br><br>
+      <input type="submit">
+    </form>
+
+
+  </div>
+    </body>
+  </html>
